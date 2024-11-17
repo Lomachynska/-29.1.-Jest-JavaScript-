@@ -78,3 +78,21 @@ console.log(weekFn(9))   // null
 console.log(weekFn(1.5)) // null
 console.log(weekFn('2')) // null
 
+
+
+// 
+node -v
+nvm install 16
+nvm install node
+
+nvm use 16
+node -v
+npm install -g npm
+
+npm test
+
+npm install -g npm@6
+
+npm -v
+
+npm test

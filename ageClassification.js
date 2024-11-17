@@ -1,3 +1,4 @@
+// src/ageClassification.js
 function ageClassification(num) {
   return num < 0 ? null :
     num <= 24 ? 'Дитинство' :
@@ -7,7 +8,6 @@ function ageClassification(num) {
             num <= 90 ? 'Довголіття' :
               num <= 122 ? 'Рекорд' : null
 }
-
 
 console.log('    -1 :', ageClassification(-1)) // -1 : null
 console.log('     0 :', ageClassification(0)) // 0 : null
@@ -25,50 +25,6 @@ console.log(' 90.01 :', ageClassification(90.01)) // 90.01 : Рекорд
 console.log('   122 :', ageClassification(122)) // 122 : Рекорд
 console.log('122.01 :', ageClassification(122.01)) // 122.01 : null
 
-module.exports = ageClassification;
 
+module.exports = ageClassification; 
 
-//  3. Тестування функції weekFn(cond): Напишіть тести для функції weekFn(cond), що повертає назву дня тижня за заданим числом. 
-//Тест повинен переконатися, що функція коректно повертає назви для чисел від 1 до 7, та повертає null для невідповідних значень (наприклад, 9, 1.5, '2').
-
-function weekFn(cond) {
-  let str = ''
-
-  switch (cond) {
-    case 1:
-      str = 'Понеділок'
-      break
-    case 2:
-      str = 'Вівторок'
-      break
-    case 3:
-      str = 'Середа'
-      break
-    case 4:
-      str = 'Четвер'
-      break
-    case 5:
-      str = 'П\'ятниця'
-      break
-    case 6:
-      str = 'Субота'
-      break
-    case 7:
-      str = 'Неділя'
-      break
-    default:
-      str = null
-  }
-
-  return str
-}
-
-console.log(weekFn(1))   // 'Понеділок'
-console.log(weekFn(3))   // 'Середа'
-console.log(weekFn(7))   // 'Неділя'
-console.log(weekFn(9))   // null
-console.log(weekFn(1.5)) // null
-console.log(weekFn('2')) // null
-
-
-module.exports = { ageClassification, weekFn }

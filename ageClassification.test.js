@@ -1,4 +1,4 @@
-const { ageClassification, weekFn} = require('./main.js');
+const { ageClassification, weekFn} = require('./ageClassification.js');
 
 describe('Testing the ageClassification function for various are ranges',() => {
 
