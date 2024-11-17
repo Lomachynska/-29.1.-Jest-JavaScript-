@@ -1,4 +1,4 @@
-const weekFn = require('../weekFn');
+const weekFn = require('./weekFn.js');
 
 describe('weekFn function', () => {
   test('should return Понеділок for 1', () => {
